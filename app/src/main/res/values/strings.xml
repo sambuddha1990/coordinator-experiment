@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MastHead</string>
+    <string name="bottom_collapsable_text">Bottom Collapsable Text</string>
+    <string name="sticky_text">Sticky Text</string>
+    <string name="collapsable_text">Top Collapsable Text</string>
+</resources>

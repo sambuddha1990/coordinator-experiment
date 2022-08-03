@@ -21,6 +21,5 @@ jobs:
         with:
           java-version: 11
 
-      - name: Publish library
-      - name: Build library and sample app
+      - name: Build library
         run: ./gradlew build

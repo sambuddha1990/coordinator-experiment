@@ -22,7 +22,5 @@ jobs:
           java-version: 11
 
       - name: Publish library
-        run: |
-          ./gradlew publishToMavenLocal -Ppublishing.artifactType=RELEASE
       - name: Build library and sample app
         run: ./gradlew build

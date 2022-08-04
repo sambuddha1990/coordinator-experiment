@@ -5,11 +5,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mylibrary.ITest
 
 /**
  * Created by sambuddha.dhar on 11/02/22.
  */
-class TestAdapter(val itemList: List<String>) : RecyclerView.Adapter<TestAdapter.TestVH>() {
+class TestAdapter(val itemList: List<String>) : RecyclerView.Adapter<TestAdapter.TestVH>(), ITest {
 
     class TestVH(view: View) : RecyclerView.ViewHolder(view) {
         val tv = view.findViewById<TextView>(R.id.text)
@@ -28,5 +29,8 @@ class TestAdapter(val itemList: List<String>) : RecyclerView.Adapter<TestAdapter
     }
 
     override fun getItemCount(): Int = itemList.size
+    override fun test(): String = ""
+    override fun test1(): Int = 1
+    override fun test2(): Float = 1F
 
 }

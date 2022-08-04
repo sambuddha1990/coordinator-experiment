@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MastHead"
 include ':app'
+include ':test:mylibrary'

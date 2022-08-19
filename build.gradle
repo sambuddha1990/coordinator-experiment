@@ -13,6 +13,8 @@ buildscript {
     }
 }
 
+apply from: 'test/tools/install-git-hooks.gradle'
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

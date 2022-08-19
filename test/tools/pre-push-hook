@@ -10,6 +10,11 @@ if [ -d "../app" ]; then
     exit 0
 fi
 
+if [ -d "app" ]; then
+    echo "Can't push from different repository"
+    exit 0
+fi
+
 # Gradle can be installed system-wide as well, and setting `GRADLE_EXEC=gradle` will force
 # this script to use that rather than the local wrapper.
 GRADLE_EXEC="${GRADLE_EXEC:-./gradlew}"

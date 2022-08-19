@@ -31,7 +31,6 @@ class TestAdapter(val itemList: List<String>) : RecyclerView.Adapter<TestAdapter
     override fun getItemCount(): Int = itemList.size
     override fun test(): String = ""
     override fun test1(): Int = 1
-    override fun test2(): Int = 1
-    override fun test3(): String = ""
+    override fun test2(): Float = 1F
 
 }

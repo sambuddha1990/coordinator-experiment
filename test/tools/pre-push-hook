@@ -4,14 +4,15 @@ set -e
 set -u
 set -o pipefail
 
+echo "<<<<<<<<<<<<<<<<<<<< Checking pre-push-hook >>>>>>>>>>>>>>>>>>>>>>>"
 
 if [ -d "../app" ]; then
-    echo "Can't push from different repository"
+    echo "Can't push from different repository. Please revert"
     exit 0
 fi
 
 if [ -d "app" ]; then
-    echo "Can't push from different repository"
+    echo "Can't push from different repository. Please revert"
     exit 0
 fi
 

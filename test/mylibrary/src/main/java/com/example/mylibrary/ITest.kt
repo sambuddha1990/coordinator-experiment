@@ -5,5 +5,5 @@ interface ITest {
     fun test1(): Int
     fun test2(): Int
 
-    fun test3(): Float
+    fun test3(): String
 }

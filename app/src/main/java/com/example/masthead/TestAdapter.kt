@@ -34,4 +34,14 @@ class TestAdapter(val itemList: List<String>) : RecyclerView.Adapter<TestAdapter
     override fun test2(): Int = 1
     override fun test3(): String = ""
 
+    fun abcTest(a: Int): Int {
+        return if (a%2 == 0) {
+            1
+        } else if (a%3 ==0) {
+            5
+        } else {
+            10
+        }
+    }
+
 }
